@@ -146,6 +146,10 @@ div.citations-container {
     font-family: sans-serif;
 }
 
+div.citations-container h1 {
+    font-size: 3vw;
+}
+
 #citationButton {
     text-decoration: solid;
     text-decoration-color: white;
