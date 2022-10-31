@@ -20,52 +20,40 @@ var positiveCircle = L.circle([25.041, 121.571116], {
     radius: 1000
 }).addTo(map);
 
-positiveCircle.bindPopup("<p><p style='color: lime;' >Opportunities</p> of Urban Growth</p>", {
+positiveCircle.bindPopup("<h1><span style='color: lime;' >Opportunities</span> of Urban Growth</h1><p id='opportunityButton'>Click Me!<p>", {
     minWidth : 350
 });
 
-negativeCircle.bindPopup("<p><p style='color: red;' >Challenges</p> of Urban Growth</p>", {
+negativeCircle.bindPopup("<h1><span style='color: red;' >Challenges</span> of Urban Growth</h1><p id='challengeButton'>Click Me!<p>", {
     minWidth : 320
 });
 
 positiveCircle.on('mouseover',function(ev) {
     ev.target.openPopup();
+    document.getElementById("opportunityButton").onclick = function() {
+        setTimeout(() => {
+            document.location.href = "opportunity.html"
+        }, 500)
+    }
 });
 
 negativeCircle.on('mouseover',function(ev) {
     ev.target.openPopup();
-});
-
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}
-
-var animation = anime({
-    targets: '.wiper',
-    translateX: -window.innerWidth,
-    translateY: -window.innerHeight,
-    delay: function (el, i) { return i * 100; },
-    duration: 500,
-    direction: 'alternate',
-    loop: false,
-    autoplay: false,
-    easing: 'easeInOutQuad',
-    complete: function(anim) {
-        document.body.style.background = "rgb(56,72,63)"
+    document.getElementById("challengeButton").onclick = function() {
         setTimeout(() => {
             document.location.href = "challenge.html"
         }, 500)
     }
 });
 
+positiveCircle.on("click", function(ev) {
+    setTimeout(() => {
+        document.location.href = "opportunity.html"
+    }, 500)
+})
+
 negativeCircle.on("click", function(ev) {
-    animation.play();
+    setTimeout(() => {
+        document.location.href = "challenge.html"
+    }, 500)
 })
