@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 div#map {
@@ -29,4 +30,70 @@ div#tipbar {
 p {
     font-size: 1vw;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div#citationBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #1d3328;
+    z-index: 3;
+}
+
+div#outerCitation {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: transparent;
+    z-index: 3;
+}
+
+div#citationBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    opacity: 0.7;
+    background-color: grey;
+    z-index: 4;
+}
+
+div#citations {
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    width: 80vw;
+    height: 80vh;
+    background-color: #1d3328;
+    border-radius: 4%/6%;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+div#citations h1 {
+    font-family: sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+}
+
+div#citations p {
+    font-size: 1vw;
+    text-align: center;
+    color: white;
+}
+
+svg {
+    position: absolute;
+    top: 12vh;
+    right: 12vw;
+    z-index: 7;
+    color: white;
 }

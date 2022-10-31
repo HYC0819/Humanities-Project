@@ -1,5 +1,13 @@
 var coords = [25.04,121.535]
 
+function toggleCitations() {
+    if (document.getElementById("outerCitation").style.visibility == "visible") {
+        document.getElementById("outerCitation").style.visibility = "hidden"
+    } else {
+        document.getElementById("outerCitation").style.visibility = "visible"
+    }
+}
+
 var map = L.map('map').setView(coords, 14);
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
@@ -57,3 +65,11 @@ negativeCircle.on("click", function(ev) {
         document.location.href = "challenge.html"
     }, 500)
 })
+
+document.querySelector("svg").onclick = function() {
+    toggleCitations()
+}
+
+document.getElementById("citationBar").onclick = function() {
+    toggleCitations()
+}
