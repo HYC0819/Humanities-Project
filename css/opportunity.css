@@ -43,7 +43,7 @@ div#returnHome h1 {
 
 div#returnHome {
     position: fixed;
-    top: 27vh;
+    top: 25vh;
     left: 8vw;
     width: 20vw;
     height: 16vh;
@@ -63,7 +63,7 @@ div.impactType h1 {
 
 div.impactType {
     position: fixed;
-    top: 27vh;
+    top: 25vh;
     left: 35vw;
     width: 20vw;
     height: 16vh;
@@ -109,7 +109,7 @@ div.slide p {
 }
 
 div.slide p img {
-    width: 15vw;
+    width: 20vw;
     margin-top: 6%;
     border-radius: 2% / 4%;
 }
@@ -137,6 +137,22 @@ div.slide:nth-of-type(3) {
 
 div.slide:nth-of-type(4) {
     top: 90vh;
+}
+
+img#streetImage {
+    border-radius: 4%/8%;
+    width: 45vw;
+}
+
+div#streetAnnot {
+    color: grey;
+    position: fixed;
+    top: 46vh;
+    left: 9vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: 700;
 }
 
 div.scroll {

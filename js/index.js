@@ -8,6 +8,14 @@ function toggleCitations() {
     }
 }
 
+function togglePresentationInfo() {
+    if (document.getElementById("outerPresentationInfo").style.visibility == "visible") {
+        document.getElementById("outerPresentationInfo").style.visibility = "hidden"
+    } else {
+        document.getElementById("outerPresentationInfo").style.visibility = "visible"
+    }
+}
+
 var map = L.map('map').setView(coords, 14);
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
@@ -66,10 +74,18 @@ negativeCircle.on("click", function(ev) {
     }, 500)
 })
 
-document.querySelector("svg").onclick = function() {
+document.getElementById("toggleCitations").onclick = function() {
     toggleCitations()
 }
 
 document.getElementById("citationBar").onclick = function() {
     toggleCitations()
+}
+
+document.getElementById("togglePresentationInfo").onclick = function() {
+    togglePresentationInfo()
+}
+
+document.getElementById("presentationInfoBar").onclick = function() {
+    togglePresentationInfo()
 }
