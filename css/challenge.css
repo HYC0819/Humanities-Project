@@ -98,7 +98,6 @@ body {
 div.slide {
     margin-top: 10vh;
     width: 30vw;
-    height: 80vh;
 }
 
 div.slide h1 {
@@ -193,4 +192,22 @@ div#streetAnnot {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5vw;
     font-weight: 700;
+}
+
+div.fact {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: solid;
+    border-color: yellow;
+    padding: 2%;
+}
+
+div.fact h1 {
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+div.fact p {
+    font-size: 1vw;
+    font-weight: 500;
 }
