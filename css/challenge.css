@@ -6,6 +6,14 @@ body {
     height: 300vh;
 }
 
+div.slides {
+    width: 30vw;
+    height: 300vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 h1.title {
     position: fixed;
     font-family: sans-serif;
@@ -88,9 +96,7 @@ body {
 }
 
 div.slide {
-    position: absolute;
-    top: 5%;
-    right: 3%;
+    margin-top: 10vh;
     width: 30vw;
     height: 80vh;
 }
@@ -129,14 +135,6 @@ div.slide p img {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(92, 92, 92);
-}
-
-div.slide:nth-of-type(3) {
-    top: 5vh;
-}
-
-div.slide:nth-of-type(4) {
-    top: 100vh;
 }
 
 div.scroll {
@@ -179,4 +177,20 @@ div.citations {
     height: 50vh;
     font-size: 0.8vw;
     color: rgb(204, 255, 247);
+}
+
+img#streetImage {
+    border-radius: 4%/8%;
+    width: 35vw;
+}
+
+div#streetAnnot {
+    color: grey;
+    position: fixed;
+    top: 46vh;
+    left: 14vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight: 700;
 }
