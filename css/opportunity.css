@@ -3,12 +3,12 @@
 body {
     background-color: rgb(56,72,63);
     margin: 0;
-    height: 300vh;
+    height: 235vh;
 }
 
 div.slides {
     width: 30vw;
-    height: 300vh;
+    height: 235vh;
     position: absolute;
     top: 0;
     right: 5vw;
@@ -146,14 +146,14 @@ div.slide:nth-of-type(4) {
 
 img#streetImage {
     border-radius: 4%/8%;
-    width: 45vw;
+    width: 43vw;
 }
 
 div#streetAnnot {
     color: grey;
     position: fixed;
     top: 46vh;
-    left: 9vw;
+    left: 10vw;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5vw;

@@ -34,6 +34,7 @@ div#cityInfo {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     background-color: #1d3328;
+    width: 24vw;
     z-index: 2;
     border-radius: 2%/4%;
     padding-left: 1%;
@@ -175,7 +176,7 @@ div#presentationInfo h1 {
 div#presentationInfo p {
     padding-left: 1vw;
     width: 78vw;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-align: center;
     color: white;
 }
