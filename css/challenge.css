@@ -3,12 +3,12 @@
 body {
     background-color: rgb(56,72,63);
     margin: 0;
-    height: 260vh;
+    height: 275vh;
 }
 
 div.slides {
     width: 30vw;
-    height: 260vh;
+    height: 275vh;
     position: absolute;
     top: 0;
     right: 5vw;
